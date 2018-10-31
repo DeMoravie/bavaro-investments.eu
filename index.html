@@ -9,16 +9,47 @@
 	</head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
 	<body id="body" class="backgroundbody">
-		<div class="topnav">
-		  <a class="active" href="index.html">Home</a>
-		  <a href="cryptoCharts.html">Crypto Charts</a>
-		  <a href="cryptoMarketData.html">Crypto Market Data</a>
-		  <a href="uraniumCharts.html">Uranium Charts</a>	
-		  <a href="uraniumMarketData.html">Uranium Market Data</a>
+		
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="#">About</a>
+		  <a href="#">Services</a>
+		  <a href="#">Clients</a>
+		  <a href="#">Contact</a>
 		</div>
-		<div>
-			<img src="https://nnimgt-a.akamaihd.net/transform/v1/crop/frm/Fjc97JFBmLYW9DSUSgjdD/1497edc2-230a-4ae5-a732-1cd6bc2851a8.jpg/r0_101_3504_2071_w1200_h678_fmax.jpg" id="bodyimg">
+		
+		<span style="font-size:36px;cursor:pointer" onclick="openNav()" id="menubtn">&#9776; </span>
+		
+		<div id="mySidenavR" class="sidenavR">
+		  <a href="javascript:void(0)" class="closebtnR" onclick="closeNavR()">&times;</a>
+		  <a href="#">Stock 1</a>
+		  <a href="#">Stock 2</a>
+		  <a href="#">Stock 3</a>
+		  <a href="#">Stock 4</a>
 		</div>
+		
+		<span style="font-size:36px;cursor:pointer" onclick="openNavR()" id="menubtnR">&#9776; </span>
+		
+		<div class="board" id="board">
+			<div class="card" id="card1">
+			  <h2 class="header">INVESTMENT BLOG</h2>
+			  <div class="fakeimg" style="height:200px;">Image</div>
+			  <p>Some text..</p>
+			</div>
+		
+			<div class="card" id="card2">
+			  <h2 class="header">INVESTMENT BLOG</h2>
+			  <div class="fakeimg" style="height:200px;">Image</div>
+			  <p>Some text..</p>
+			</div>
+			
+			<div class="card" id="card3">
+			  <h2 class="header">INVESTMENT BLOG</h2>
+			  <div class="fakeimg" style="height:200px;">Image</div>
+			  <p>Some text..</p>
+			</div>
+		</div>
+		
 		<script src="myscripts.js"></script>
 	</body>
 </html>
