@@ -51,6 +51,7 @@ body {
 #menubtn {
 	margin-left:12px;
 	float: left;
+	position: fixed;
 }
 
 
