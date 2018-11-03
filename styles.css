@@ -1,5 +1,9 @@
 @import "compass/css3";
 
+.link {
+	cursor: pointer;
+}
+
 .board {
 	margin-left: 47px;
 	margin-top: 10px;
@@ -139,4 +143,97 @@ body {
 @media screen and (max-height: 450px) {
   .sidenavR {padding-top: 15px;}
   .sidenavR a {font-size: 18px;}
+}
+
+
+/*----------------------*/
+/*------THE  MODAL------*/
+/*----------------------*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    z-index: 50; /* Sit on top */
+    padding-top: 0px; /* Location of the box */
+    /*left: 40vh;	
+    top: 4vw;*/
+    width: 65vw; 
+    height: 75vh;
+	overflow-y: hidden;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+	margin-top: 50px;
+    display: block;
+	width: 65vw;	
+}
+
+/*.modalHeader {
+	/*display: none; /* Hidden by default 
+	position: fixed;
+}*/
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+.modalDescription {
+    margin: auto;
+    display: block;
+    width: 60vh;
+	height: auto;
+    /*max-width: 700px;*/
+    text-align: center;
+    color: white;
+    padding: 10px 10px;
+	font-family: "Lato", sans-serif;
+	margin-bottom: 50px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content .modalDescription { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/*----------------------*/
+/*--MODAL CLOSE BOTTON--*/
+/*----------------------*/
+
+.modal .closeModal {
+	position: fixed;
+	left: 160vh;
+    color: #818181;
+    font-size: 36px;
+    transition: 0.3s;
+	font-family: "Lato", sans-serif;
+}
+
+.modal .closeModal:hover, .closeModal:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal .social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.modalHeader {
+	color: white;
+	text-align: center;
+	font-family: "Lato", sans-serif;
 }
